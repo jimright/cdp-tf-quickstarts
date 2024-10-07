@@ -32,6 +32,18 @@ output "azure_vnet_name" {
   description = "Azure Virtual Network Name"
 }
 
+output "azure_cdp_subnet_names" {
+  value = module.cdp_azure_prereqs.azure_cdp_subnet_names
+
+  description = "Azure Subnets used for CDP"
+}
+
+output "azure_gateway_subnet_names" {
+  value = module.cdp_azure_prereqs.azure_cdp_gateway_subnet_names
+
+  description = "Azure Subnets used for Gateway Subnets"
+}
+
 output "azure_resource_group_name" {
   value = module.cdp_azure_prereqs.azure_resource_group_name
 
