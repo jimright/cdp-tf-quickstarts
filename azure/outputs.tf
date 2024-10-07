@@ -38,11 +38,23 @@ output "azure_resource_group_name" {
   description = "Azure Resource Group Name"
 }
 
+output "azure_data_storage_account" {
+  value = module.cdp_azure_prereqs.azure_data_storage_account
+
+  description = "Azure data storage account name"
+}
+
 output "azure_data_storage_location" {
   value = module.cdp_azure_prereqs.azure_data_storage_location
 
   description = "Azure data storage location"
 
+}
+
+output "azure_log_storage_account" {
+  value = module.cdp_azure_prereqs.azure_log_storage_account
+
+  description = "Azure log storage account name"
 }
 
 output "azure_log_storage_location" {
@@ -57,4 +69,10 @@ output "azure_backup_storage_location" {
 
   description = "Azure backup storage location"
 
+}
+
+output "azure_backup_storage_account" {
+  value = module.cdp_azure_prereqs.azure_backup_storage_account
+
+  description = "Azure backup storage account name"
 }
