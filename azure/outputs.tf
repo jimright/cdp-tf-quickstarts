@@ -76,3 +76,10 @@ output "azure_backup_storage_account" {
 
   description = "Azure backup storage account name"
 }
+
+output "public_key_text" {
+  value = local.public_key_text
+
+  description = "SSH Public key string for the nodes of the CDP environment"
+  
+}
