@@ -39,21 +39,21 @@ output "azure_resource_group_name" {
 }
 
 output "azure_data_storage_location" {
-  value = "abfs://${azurerm_storage_container.cdp_data_storage.name}@${azurerm_storage_container.cdp_data_storage.storage_account_name}.dfs.core.windows.net"
+  value = module.cdp_azure_prereqs.azure_data_storage_location
 
   description = "Azure data storage location"
 
 }
 
 output "azure_log_storage_location" {
-  value = "abfs://${azurerm_storage_container.cdp_log_storage.name}@${azurerm_storage_container.cdp_log_storage.storage_account_name}.dfs.core.windows.net"
+  value = module.cdp_azure_prereqs.azure_log_storage_location
 
   description = "Azure log storage location"
 
 }
 
 output "azure_backup_storage_location" {
-  value = "abfs://${azurerm_storage_container.cdp_backup_storage.name}@${azurerm_storage_container.cdp_backup_storage.storage_account_name}.dfs.core.windows.net"
+  value = module.cdp_azure_prereqs.azure_backup_storage_location
 
   description = "Azure backup storage location"
 
