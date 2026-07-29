@@ -7,7 +7,7 @@
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
 | <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 2.46.0, < 4.0.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.0 , < 5.0.0 |
 | <a name="requirement_cdp"></a> [cdp](#requirement\_cdp) | >= 0.6.1 |
 | <a name="requirement_http"></a> [http](#requirement\_http) | ~> 3.2.1 |
 | <a name="requirement_local"></a> [local](#requirement\_local) | ~> 2.5.1 |
